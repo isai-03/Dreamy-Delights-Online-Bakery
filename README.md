@@ -1,3 +1,3 @@
 # bakery
-Bakery website built with html, css,bootstrap, and  javascript
-https://youngjer79.github.io/bakery/.
+Dreamy delights is built using HTML,CSS,JavaScript,Bootstrap and PHP.
+It can be used to place order , add items in cart etc
