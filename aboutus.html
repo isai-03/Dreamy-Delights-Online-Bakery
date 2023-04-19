@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #964B00;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+*{
+  margin:0px;
+  padding:0px;
+  font-family:poppins;
+  box-sizing:border-box
+}
+a{
+  text-decoration:none;
+}
+ul{
+  list-style:none;
+}
+body{
+  margin:0px;
+  padding:0px;
+  font-family:poppins;
+}
+#blog{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  padding:40px;
+  border-bottom:1px solid rgba(0,0,0,0.05);
+}
+.blog-heading{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction:column;
+}
+.blog-heading span{
+  color:#f33c3c;
+}
+.blog-heading h3{
+  font-size:2.4rem;
+  color:#2b2b2b;
+  font: weight 800px;
+}
+.blog-container{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin:20px 0px;
+  flex-wrap:wrap;
+}
+.blog-box{
+  width:350px;
+  background-color:#ffffff;
+  border:1px solid #ececec;
+  margin:20px;
+}
+.blog-img{
+  width: 100%;
+  height: auto;
+}
+.blog-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.blog-text{
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+}
+.blog-text span{
+  color:#f33c3c;
+  font-size:0.9rem;
+}
+.blog-text .blog-title{
+  font-size:1.3rem;
+  font-weight:500;
+  color:#272727;
+}
+.blog-text .blog-title:hover{
+  color:#f33c3c;
+  transition:all ease 0.3s;
+}
+.blog-text p{
+  color:#9b9b9b;
+  font-size:0.9rem;
+  display:-webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  margin:20px 0px;
+}
+.blog-text a{
+  color:#0f0f0f;
+}
+.blog-text a:hover{
+  color:#f33c3c;
+  transition: all ease 0.3s;
+}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&family=Quicksand:wght@300;400;500;600;700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="about-section">
+    <h1>About Us </h1>
+    <p>We are not just a bakery, we are not just bakers. In fact, we are just like you, a bunch of food lovers fascinated with sweet indulgence, who dreamt of creating an appetizing fairy land of divine delicacies that relishes the utmost desires.</p>
+    
+  </div>
+  
+  
+  <section id="blog">
+    <div class="blog-heading">
+      <span>Our Recent Posts</span>
+      <h3>Our Blog</h3>
+      </div>
+      <div class="blog-container">
+        <div class="blog-box">
+          <div class="blog-img">
+             <img src="knead.jpeg" style="height:250px;">
+          </div>
+          <div class="blog-text">
+            <span>
+              #trending 1
+            </span>
+            
+            <p>Everyone is kneaded out of the same dough but not baked in the same oven.</p>
+<a href="http://lyonbakery.com/the-origin-of-bread/#:~:text=According%20to%20history%2C%20the%20earliest,)%20or%20tortillas%20(Mexico).">Read more</a>
+          </div>
+      </div>
+      <div class="blog-box">
+        <div class="blog-img">
+           <img src="tart.jpg" style="height:250px;">
+        </div>
+        <div class="blog-text">
+          <span>
+            Recipe
+          </span>
+          
+          <p>Tarts Tarts Tarts!!!</p>
+<a href="https://www.tarladalal.com/eggless-tarts-1135r" >Read more</a>
+        </div>
+    </div>
+    <div class="blog-box">
+      <div class="blog-img">
+         <img src="coffee/black.jpg" style="height:230px;">
+      </div>
+      <div class="blog-text">
+        <span>
+          benefits!!
+        </span>
+        
+        <p>Coffee is a beloved beverage known for its ability to fine-tune your focus and boost your energy levels.</p>
+<a href="https://www.healthline.com/nutrition/top-evidence-based-health-benefits-of-coffee">Read more</a>
+      </div>
+  </div>
+  
+  </section>
+  <h2 style="text-align:center">Our Chef</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="img/chef-1.png" alt="Jane" style="height:500px;width:300px;">
+        <div class="container">
+          <h2>Jane Doe</h2>
+          <p class="title">Garde manger(Pantry chef) </p>
+          <p> salads, cold appetizers, cheeses, cold cut meats and foods like pates and canapes.</p>
+          <p>jane@dreamy.org</p>
+          <a href="https://mail.google.com/mail/u/0/#inbox">Contact</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="img/chef-2.png" alt="Mike" style="height:500px;width:300px;">
+        <div class="container">
+          <h2>Rachael Manroe</h2>
+          <p class="title">Boulanger</p>
+          <p>bread doughs for baking.</p>
+          <p>manroe@example.com</p><br>
+          <a href="https://mail.google.com/mail/u/0/#inbox">Contact</a>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="img/chef-3.png" alt="John" style="height:500px;width:300px;">
+        <div class="container">
+          <h2>John Doe</h2>
+          <p class="title">Confiseur</p>
+          <p>small confectionaries and candies.</p>
+          <p>john@example.com</p><br>
+          <a href="https://mail.google.com/mail/u/0/#inbox">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
